@@ -59,8 +59,7 @@ jupyter notebook notebooks/
 
 Each notebook in `notebooks/` can be run independently and top-to-bottom against the checkpoints
 referenced in `models/registry.json`. `predictions/` already contains the saved outputs used for
-the paper's reported numbers, so these notebooks can also be used to inspect results without
-re-running inference. To train models from scratch instead of using existing checkpoints, see
+the paper's reported numbers. To train models from scratch instead of using existing checkpoints, see
 `training/` (and the path-adjustment note above).
 
 ## Model weights
