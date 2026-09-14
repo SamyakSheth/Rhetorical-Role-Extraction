@@ -43,6 +43,6 @@ more than one split.
 - **`keep_default_na=False`**: pass this to `pandas.read_csv` when loading any of these files.
   The literal string `"None"` is a real label value in this dataset, not a missing value —
   without this flag, pandas silently converts it to `NaN`.
-- Raw XML source files and intermediate annotation-tool exports (Label Studio) are not included
+- Raw XML source files and intermediate annotation-tool exports are not included
   in this repository. Only the final, cleaned sentence-level data used for all experiments in the
   paper is published here.
