@@ -1,0 +1,16 @@
+# Model weight files -- hosted on Hugging Face Hub, not committed here.
+# See models/registry.json for the hosted repo/subfolder per model.
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+*.msgpack
+
+# OS / editor cruft
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
