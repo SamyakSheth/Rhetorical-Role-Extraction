@@ -43,14 +43,6 @@ value to the test set.
 | `training/bertje_train.ipynb` | BERTje's five-way, Stage 1, and Stage 2 models |
 | `training/logistic_regression.ipynb` | The Logistic Regression + TF-IDF lexical baseline, across the same formulations (5-way, Stage 1, Stage 2, OvR) |
 
-**Do not confuse `logistic_regression.ipynb` with a "Pipeline C" logistic-regression combiner** —
-they are unrelated. `logistic_regression.ipynb` trains the lexical baseline reported in the paper's
-Results section ("Logistic Regression with TF-IDF features served as a lexical baseline"). A
-separate experimental idea — a logistic-regression *meta-model* combining Stage 1/Stage 2/OvR/5-way
-probabilities, informally called "Pipeline C" during development — was tested, found not to
-outperform the reported pipelines, and is **not included** here since it does not appear in the
-paper. A noisy-OR variant of Pipeline B was tested for the same reason and is also excluded.
-
 Note: the training notebooks were developed and run locally with relative paths matching the
 original project layout; you may need to adjust data/output paths at the top of each notebook
 before re-running training end-to-end in this repository's directory structure. The `notebooks/`
