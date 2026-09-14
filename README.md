@@ -28,7 +28,7 @@ models/registry.json Model checkpoint registry (stub — see note below)
 | `notebooks/04_stage1_relevance.ipynb` | None Detection (Stage 1) | Table 2 & 3 "Stage 1" rows |
 | `notebooks/05_stage2_fourway.ipynb` | Four-Way Role Classification (Stage 2) | Table 2 & 3 "Stage 2 4-way" rows |
 | `notebooks/06_ovr_detectors.ipynb` | One-vs-Rest Role Detection | Table 2 & 3 "OvR" rows |
-| `notebooks/07_bertje_evaluation.ipynb` | All formulations, BERTje | Table 2 "BERTje" rows (5-way, Pipeline B, Stage 1, Stage 2, OvR); qualitative error examples for the precision/recall trade-off after Bayesian updating |
+| `notebooks/07_bertje_evaluation.ipynb` | All formulations, BERTje | Table 2 "BERTje" rows (5-way, Pipeline B, Stage 1, Stage 2, OvR)|
 
 Each notebook in `notebooks/` is self-contained: it loads the RobBERT/BERTje checkpoint(s) for its
 own formulation, runs inference on `data/test.csv`, evaluates against the paper's reported
