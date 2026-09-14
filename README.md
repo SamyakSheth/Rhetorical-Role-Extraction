@@ -67,8 +67,7 @@ re-running inference. To train models from scratch instead of using existing che
 
 Model checkpoints are not yet hosted publicly. `models/registry.json` documents the model keys,
 base checkpoint (`pdelobelle/robbert-v2-dutch-base`), and task each one performs; the `hf_repo`
-field will be filled in once weights are published (Hugging Face Hub vs. Git LFS still to be
-decided).
+field will be filled in once weights are published.
 
 ## Dataset
 
@@ -84,4 +83,4 @@ TODO: add citation once published
 
 ## License
 
-TODO — see [`LICENSE`](LICENSE). Not yet finalized; do not reuse until this is resolved.
+TODO — see [`LICENSE`](LICENSE). Not yet finalized.
