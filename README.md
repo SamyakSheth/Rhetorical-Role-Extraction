@@ -22,13 +22,13 @@ models/registry.json Model checkpoint registry (stub — see note below)
 
 | Notebook | Formulation | Produces |
 |---|---|---|
-| `notebooks/01_five_way_inference.ipynb` | Direct five-way classification | Table 2 & 3 "5-way" rows; error-decomposition numbers in Discussion |
+| `notebooks/01_five_way_inference.ipynb` | Direct five-way classification | Table 2 & 3 "5-way" rows; error decomposition|
 | `notebooks/02_pipeline_a.ipynb` | Pipeline A (Stage 1 x Stage 2) | Table 2 & 3 "Pipeline A" rows; error decomposition |
 | `notebooks/03_pipeline_b.ipynb` | Pipeline B (Stage 1 x OvR) | Table 2 & 3 "Pipeline B" rows; error decomposition |
 | `notebooks/04_stage1_relevance.ipynb` | None Detection (Stage 1) | Table 2 & 3 "Stage 1" rows |
 | `notebooks/05_stage2_fourway.ipynb` | Four-Way Role Classification (Stage 2) | Table 2 & 3 "Stage 2 4-way" rows |
 | `notebooks/06_ovr_detectors.ipynb` | One-vs-Rest Role Detection | Table 2 & 3 "OvR" rows |
-| `notebooks/07_bertje_evaluation.ipynb` | All formulations, BERTje | Table 2 "BERTje" rows (5-way, Pipeline B, Stage 1, Stage 2, OvR)|
+| `notebooks/07_bertje_evaluation.ipynb` | All formulations, BERTje | Table 2 "BERTje" rows |
 
 Each notebook in `notebooks/` is self-contained: it loads the RobBERT/BERTje checkpoint(s) for its
 own formulation, runs inference on `data/test.csv`, evaluates against the paper's reported
