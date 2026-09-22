@@ -1,38 +1,45 @@
 {
-  "_note": "Stub registry. Model weights are not yet hosted publicly (Hugging Face Hub vs. Git LFS still to be decided). Once available, hf_repo below should point to a real Hugging Face Hub model id, e.g. 'your-org/robbert-none-detection'.",
+  "_note": "Weights hosted on Hugging Face Hub as subfolders of a single repo. Load a specific model with: AutoModelForSequenceClassification.from_pretrained(hf_repo, subfolder=subfolder).",
   "stage1_gatekeeper": {
     "description": "None Detection (Stage 1): binary classifier separating None from the four substantive legal-role categories.",
     "base_model": "pdelobelle/robbert-v2-dutch-base",
-    "hf_repo": null
+    "hf_repo": "VoidPyxis/robbert-rhetorical-roles-nl",
+    "subfolder": "none-detection"
   },
   "stage2_text_only_4way": {
     "description": "Four-Way Role Classification (Stage 2): role classifier trained and evaluated only on gold legally-labelled sentences.",
     "base_model": "pdelobelle/robbert-v2-dutch-base",
-    "hf_repo": null
+    "hf_repo": "VoidPyxis/robbert-rhetorical-roles-nl",
+    "subfolder": "stage2-4way"
   },
   "text_only_5way": {
     "description": "Direct five-way classifier: predicts None or one of the four legal roles jointly.",
     "base_model": "pdelobelle/robbert-v2-dutch-base",
-    "hf_repo": null
+    "hf_repo": "VoidPyxis/robbert-rhetorical-roles-nl",
+    "subfolder": "five-way"
   },
   "ovr_beoordeling": {
     "description": "One-vs-Rest binary detector for the beoordeling (judicial reasoning) role.",
     "base_model": "pdelobelle/robbert-v2-dutch-base",
-    "hf_repo": null
+    "hf_repo": "VoidPyxis/robbert-rhetorical-roles-nl",
+    "subfolder": "ovr-beoordeling"
   },
   "ovr_beslissing": {
     "description": "One-vs-Rest binary detector for the beslissing (court's decision) role.",
     "base_model": "pdelobelle/robbert-v2-dutch-base",
-    "hf_repo": null
+    "hf_repo": "VoidPyxis/robbert-rhetorical-roles-nl",
+    "subfolder": "ovr-beslissing"
   },
   "ovr_materiele_feiten": {
     "description": "One-vs-Rest binary detector for the materiele feiten (material facts) role.",
     "base_model": "pdelobelle/robbert-v2-dutch-base",
-    "hf_repo": null
+    "hf_repo": "VoidPyxis/robbert-rhetorical-roles-nl",
+    "subfolder": "ovr-materiele-feiten"
   },
   "ovr_proceshandelingen": {
     "description": "One-vs-Rest binary detector for the proceshandelingen (submissions) role.",
     "base_model": "pdelobelle/robbert-v2-dutch-base",
-    "hf_repo": null
+    "hf_repo": "VoidPyxis/robbert-rhetorical-roles-nl",
+    "subfolder": "ovr-proceshandelingen"
   }
 }
