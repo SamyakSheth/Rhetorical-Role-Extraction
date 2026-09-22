@@ -64,9 +64,9 @@ the paper's reported numbers. To train models from scratch instead of using exis
 
 ## Model weights
 
-Model checkpoints are not yet hosted publicly. `models/registry.json` documents the model keys,
+Model checkpoints are hosted publicly on Huggingface. `models/registry.json` documents the model keys,
 base checkpoint (`pdelobelle/robbert-v2-dutch-base`), and task each one performs; the `hf_repo`
-field will be filled in once weights are published.
+field contains the link to the folders on huggingface. `models/'best_models_registry.json` is the registry used locally during experiments it contains the metadata for each of the model configurations
 
 ## Dataset
 
