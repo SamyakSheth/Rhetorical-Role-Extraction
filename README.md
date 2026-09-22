@@ -15,7 +15,7 @@ training/            Notebooks that train each model family from scratch
 notebooks/           One notebook per formulation: loads trained checkpoints, runs inference,
                      evaluates, and applies header-prior fusion — self-contained and independently runnable
 predictions/         Saved model outputs (probabilities + predicted labels) for the test set
-models/registry.json Model checkpoint registry (stub — see note below)
+models/registry.json Model checkpoint registry 
 ```
 
 ## Notebook → paper mapping
